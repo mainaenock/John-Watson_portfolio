@@ -1,2 +1,6 @@
-# John-Watson_portfolio
-This is a group project for creating a similar project like the john watson UI portfolio
+This is a portfolio in html and css 
+
+Collaborators
+1. Phelisters Ombucha
+2. Enock Maina
+   
