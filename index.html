@@ -11,7 +11,7 @@
     <section class=" relative bg-[url('./images/landing-bg.jpg')] bg-cover bg-center bg-no-repeat">
     <div class=" absolute w-full h-full bg-gradient-to-br from-gray-900/90 to-gray-800/90 bg-cover "></div>
 
-    <div class="relative z-10 text-white p-8">
+    <div class="relative z-10 text-white px-8 pt-8">
     <!-- Navbar -->
     <nav class="flex justify-between items-center p-6 bg-transparent">
         <div class="text-2xl font-bold">UI Portfolio</div>
@@ -29,7 +29,7 @@
    
 
     
-    <section class="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-20">
+    <section class=" relative flex-col md:flex-row items-center justify-between px-8 md:px-20 pt-20 pb-0">
         <!-- Left Content -->
         <div class="max-w-xl">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm John Watson</h1>
@@ -45,8 +45,8 @@
         </div>
 
         <!-- Right Image -->
-        <div class="mt-12 md:mt-0">
-            <img src="./images/banner.png" alt="John Watson" class="w-80 rounded-xl shadow-2xl ">
+        <div class="mt-12 md:mt-0 h-[600px] overflow-hidden">
+            <img src="./images/banner.png" alt="John Watson" class="w-full rounded-xl md:w-[400px] ">
         </div>
     </section>
     </div>
@@ -54,22 +54,57 @@
 
 <!-- About section -->
 <section class="py-16 bg-white text-gray-800">
-    <div class="container mx-auto px-8">
+    <div class="container mx-auto px-16">
       <div class="flex flex-col md:flex-row items-center gap-10">
-        <img src="images/about.jpg" alt="About Me" class="w-full md:w-1/2 rounded-lg shadow-lg">
+        <div class="h-[450px] overflow-hidden">
+          <img src="images/about.jpg" alt="About Me" class=" md:w-1/2 rounded-lg shadow-lg">
+        </div>
         <div class="about-text md:w-1/2">
-          <h4 class="text-teal-400 uppercase font-semibold mb-2">MY BIOGRAPHY</h4>
-          <h2 class="text-3xl font-bold mb-4 text-gray-800">A Lead UI Designer & Web Developer based in UK</h2>
+          <h4 class="text-gray-500 uppercase font-semibold mb-2">MY BIOGRAPHY</h4>
+          <h2 class="text-3xl font-bold mb-4 text-gray-700">A Lead UI Designer & Web Developer based in UK</h2>
           <p class="text-gray-600 mb-6">
             I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away! Contact me and we will discuss your projects!
           </p>
-          <div class="mt-6">
-            <p class="text-gray-600"><span class="font-semibold text-teal-400">Name:</span> John Watson</p>
-            <p class="text-gray-600"><span class="font-semibold text-teal-400">From:</span> London, UK</p>
-            <p class="text-gray-600"><span class="font-semibold text-teal-400">Email:</span> <a href="mailto:your.email@example.com" class="text-teal-400 hover:underline">your.email@example.com</a></p>
-            <p class="text-gray-600"><span class="font-semibold text-teal-400">Phone:</span> <a href="tel:+441234567890" class="text-teal-400 hover:underline">+44 123 456 7890</a></p>
+          <hr>
+          <div class="mt-6 flex flex-row justify-between">
+            <div>
+              <p class="text-gray-600"><span class="font-bold text-gray-700">Name:</span> John Watson</p>
+              <p class="text-gray-600"><span class="font-bold text-gray-700">From:</span> London, UK</p>
+            </div>
+            <div>
+              <p class="text-gray-600"><span class="font-bold text-gray-700">Email:</span> <a href="mailto:your.email@example.com" class=" hover:underline">your.email@example.com</a></p>
+              <p class="text-gray-600"><span class="font-bold text-gray-700">Phone:</span> <a href="tel:+441234567890" class=" hover:underline">+44 123 456 7890</a></p>
+            </div>
+
+           
           </div>
+          <h3 class="my-6 font-bold text-2xl">Follow me on </h3>
+          <span><button class=" transition ease-in-out duration-300 bg-green-700 hover:bg-green-900 px-7 items-center text-center font-semibold mr-3 text-white p-4 rounded-full">Hire me</button><button class="transition ease-in-out duration-300 hover:bg-green-600 bg-green-500 text-white p-4 rounded-full px-6 font-semibold">Download CV</button></span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Services section-->
+  <section class="text-gray-800 bg-gray-100 px-20 mx-auto flex flex-col py-20 items-center justify-center gap-6">
+    <h2 class="font-bold text-3xl">What I Do For You</h2>
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="bg-white p-10 flex justify-center rounded-xl shadow-lg flex-col items-center">
+        <img class="w-[40px] " src="images/webdev.png" alt="">
+        <h2 class="font-bold my-4">Web Development</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+      </div>
+      <div class="bg-white p-10 flex justify-center rounded-xl shadow-lg flex-col items-center">
+        <img class="w-[40px] " src="images/app-dev.png" alt="">
+        <h2 class="font-bold my-4">App Development</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+      </div>
+      <div class="bg-white p-10 flex justify-center rounded-xl shadow-lg flex-col items-center">
+        <img class="w-[40px] " src="images/camera.png" alt="">
+        <h2 class="font-bold my-4">Photography</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+      </div>
+      
       </div>
     </div>
   </section>
